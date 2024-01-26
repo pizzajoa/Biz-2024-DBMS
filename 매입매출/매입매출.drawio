@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2024-01-26T05:58:00.289Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="DC3B3IFekQdDOmPCBfKj" version="23.0.1" type="device">
+  <diagram name="페이지-1" id="CPt3hb7o4-7ytPrHkCDW">
+    <mxGraphModel dx="2272" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-15" value="매입매출" style="whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="530" y="50" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-17" value="일련번호" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-18" value="거래일" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-19" value="거래시각" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="210" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-20" value="상품명" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-21" value="거래처명" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-22" value="대표자명" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="610" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-23" value="거래구분" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="740" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-24" value="수량" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="890" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-25" value="매입단가" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-26" value="매출단가" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.36;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.6;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.3;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v3CEGaP3ykhIVbazzVwO-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.3;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="v3CEGaP3ykhIVbazzVwO-15" target="v3CEGaP3ykhIVbazzVwO-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
