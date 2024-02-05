@@ -138,12 +138,9 @@ SELECT COUNT(*)
 FROM tbl_iolist, tbl_products
 WHERE io_pcode = p_code;
 
-
 SELECT * FROM tbl_products;
--- 상품 테이블에 pcode가 P00014인 상품을 삭제하기
-DELETE FROM tbl_products
-WHERE p_code = 'P00014';
-
+-- 상품 테이블에 pcode 가 P00014 인 상품을 삭제하기
+DELETE FROM tbl_products WHERE p_code = 'P00014';
 SELECT COUNT(*) FROM tbl_products;
 
 /*
@@ -151,10 +148,9 @@ EQ(완전) JOIN
 JOIN 한 table 간에 참조무결성이 보장되는 경우
 틀림없는 결과를 보여준다
 하지만 만약 참조무결성이 무너진 경우는
-출력되는 데이터의 신뢰성을 보장할 수 없다
+출력되는 데이터의 신뢰성을 보장할수 없다
 */
--- 참조무결성이 무너졋다
-SELECT COUNT(*)
+SELECT COUNT(*) 
 FROM tbl_iolist, tbl_products
 WHERE io_pcode = p_code;
 
@@ -162,39 +158,52 @@ SELECT COUNT(*)
 FROM tbl_iolist
 	LEFT JOIN tbl_products
 		ON io_pcode = p_code;
--- LEFT JOIN은 왼쪽테이블은 다 출력
+
 /*
-LEFT (OUTTER) JOIN
-이 키워드를 기준으로 왼쪽에 있는 table(io_iolist)는 무조건 다 나열해라
-오른쪽의 테이블에서 ON의 조건에 맞는 데이터를 SELECT
+LEFT (OUTER) JOIN
+이 키워드를 기준으로 왼에 있는 Table(tbl_iolist) 은
+무조건 다 나열을 하라
+오른쪽의 테이블에서 ON 의 조건에 맞는 데이터를 SELECT
 만약 SELECT 된 결과가 있으면 출력을 하고
-없으면 null로 출력하라
-tbl_iolist에는 있는데 tbl_products에 데이터가 없으면 null로 출력하라
-tbl_iolist와 tbl)products간에 "참조관계가" 완전한지
+없으면 null 로 출력을 하라
+tbl_iolist 에는 있는데 tbl_products 에 데이터가 없으면
+null 로 출력하라
+tbl_iolist 와 tbl_products 간에 "참조관계가" 완전한지를
+검증하는 코드로 사용된다.
 */
--- LEFT JOIN을 실행한 결과에서
--- 오른쪽 테이블에서 SELECT한 값이 null인 경우가 발생하면
--- 이때 JOIN 한 테이블은 "참조 무결성"이 깨진것이다 
-SELECT io_pcode, P_name
+SELECT io_pcode, p_name
 FROM tbl_iolist
-	LEFT JOIN tbl_products
+	LEFT  JOIN tbl_products
 		ON io_pcode = p_code
-WHERE p_name is NULL
-ORDER BY p_name;
+ORDER BY p_name;        
+
+-- LEFT JOIN 을 실행한 결과에서
+-- 오른쪽 테이블에서 SELECT 한 값이 
+-- null 인 경우가 발생하면
+-- 이때 JOIN 한 테이블은 "참조 무결성"이 깨진것이다
+SELECT io_pcode, p_name
+FROM tbl_iolist
+	LEFT  JOIN tbl_products
+		ON io_pcode = p_code
+WHERE p_name is NULL        
+ORDER BY p_name;        
 
 -- 거래처 정보의 정규화
 -- 매입매출데이터에서 거래처정보를 분리하기
--- 1. 매입매출데이터에서 거래처명,대표자명을 
+-- 1. 매입매출 데이터에서 거래처명,대표자명을
 -- 중복되지 않는 데이터로 추출하기
 SELECT io_dname, io_dceo
 FROM tbl_iolist
 GROUP BY io_dname, io_dceo
 ORDER BY io_dname;
 
-CREATE TABLE tbl_depts(
-d_code	VARCHAR(5)		PRIMARY KEY,
-d_name	VARCHAR(50)	NOT NULL	,
-d_ceo	VARCHAR(20)		,
-d_tel	VARCHAR(15)		,
-d_addr	VARCHAR(125)		
+CREATE TABLE tbl_depts (
+	d_code	VARCHAR(5)		PRIMARY KEY,
+	d_name	VARCHAR(50)	NOT NULL,	
+	d_ceo	VARCHAR(20),		
+	d_tel	VARCHAR(15)	,	
+	d_addr	VARCHAR(125)		
 );
+DESC tbl_depts;
+
+
